@@ -7,6 +7,9 @@ python -c "import torch; print(torch.cuda.device_count())"
 python -c "import torch; t = torch.tensor([1.0]); t = t.to('cuda') if torch.cuda.is_available() else t; print(t.device)"
 
 # LIB
+git clone https://github.com/luchaoshi45/llm.git
+cd llm
+
 git clone --depth 1 https://github.com/EleutherAI/lm-evaluation-harness
 cd lm-evaluation-harness
 pip install -e .
