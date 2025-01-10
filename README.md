@@ -44,3 +44,6 @@ python test/benchmark.py
 
 cd LLaMA-Factory
 CUDA_VISIBLE_DEVICES=0 GRADIO_SHARE=1 GRADIO_SERVER_PORT=7860 llamafactory-cli webui
+
+python demo/main.py
+python demo/ui.py
