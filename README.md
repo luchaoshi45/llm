@@ -24,8 +24,12 @@ cd LLaMA-Factory
 pip install -e ".[torch,metrics]"
 cd ..
 
+git config --global user.name "MiraBit"
+git config --global user.email "luchaoshi45@gmail.com"
+
 pip install nvitop
 apt install nload
+
 
 # TEST
 python test/acc.py
