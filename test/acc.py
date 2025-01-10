@@ -5,8 +5,8 @@ from lm_eval import tasks
 import os, json
 
 # 加载模型和分词器
-model = AutoModelForCausalLM.from_pretrained("./Qwen2.5-0.5B", device_map="auto", trust_remote_code=True).eval()
-tokenizer = AutoTokenizer.from_pretrained("./Qwen2.5-0.5B", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("./Qwen2.5-0.5B-Instruct", device_map="auto", trust_remote_code=True).eval()
+tokenizer = AutoTokenizer.from_pretrained("./Qwen2.5-0.5B-Instruct", trust_remote_code=True)
 
 # 确保 HFLM 的设备与模型一致（使用 GPU）
 lm = HFLM(pretrained=model, tokenizer=tokenizer, batch_size=1, device="cuda")

@@ -14,13 +14,14 @@ git clone --depth 1 https://github.com/EleutherAI/lm-evaluation-harness
 cd lm-evaluation-harness
 pip install -e .
 
+cd ..
 git lfs install
 git clone https://www.modelscope.cn/Qwen/Qwen2.5-0.5B-Instruct.git
 
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".[torch,metrics]"
-
+cd ..
 
 
 # TEST

@@ -10,9 +10,9 @@ import os
 
 # 加载模型以及分词器
 print("加载分词器\r\n")
-tokenizer = AutoTokenizer.from_pretrained("./Qwen2.5-0.5B", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("./Qwen2.5-0.5B-Instruct", trust_remote_code=True)
 print("加载模型\r\n")
-model = AutoModelForCausalLM.from_pretrained("./Qwen2.5-0.5B", device_map="auto", trust_remote_code=True).eval()
+model = AutoModelForCausalLM.from_pretrained("./Qwen2.5-0.5B-Instruct", device_map="auto", trust_remote_code=True).eval()
 print("加载模型\r\n")
 
 # 加载指定文本作为prompt

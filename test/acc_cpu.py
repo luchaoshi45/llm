@@ -10,10 +10,10 @@ device = torch.device("cpu")
 
 # 加载模型和分词器
 model = AutoModelForCausalLM.from_pretrained(
-    "./Qwen2.5-0.5B", 
+    "./Qwen2.5-0.5B-Instruct", 
     trust_remote_code=True
 ).to(device).eval()
-tokenizer = AutoTokenizer.from_pretrained("./Qwen2.5-0.5B", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("./Qwen2.5-0.5B-Instruct", trust_remote_code=True)
 
 # 初始化 HFLM，并设置 device="cpu"
 lm = HFLM(pretrained=model, tokenizer=tokenizer, batch_size=1, device="cpu")
