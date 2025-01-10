@@ -17,14 +17,19 @@ pip install -e .
 cd ..
 git lfs install
 git clone https://www.modelscope.cn/Qwen/Qwen2.5-0.5B-Instruct.git
+git clone https://www.modelscope.cn/Qwen/Qwen2.5-7B-Instruct.git
 
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".[torch,metrics]"
 cd ..
 
+pip install nvitop
+apt install nload
 
 # TEST
+python test/acc.py
+
 python test/monitor.py test/benchmark.py
 python test/benchmark.py
 

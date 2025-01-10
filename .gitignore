@@ -1,4 +1,7 @@
 lm-evaluation-harness/
-Qwen2.5-0.5B/
+Qwen2.5*/
 LLaMA-Factory/
 results/
+
+workdir/
+__pycache__*
