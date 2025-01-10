@@ -3,7 +3,8 @@ from lm_eval.models.huggingface import HFLM
 from lm_eval import simple_evaluate
 from lm_eval import tasks
 import torch
-import os, json 
+import os, json
+from llm import _LLM_
 
 # 强制指定设备为 CPU
 device = torch.device("cpu")

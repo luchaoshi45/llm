@@ -1,4 +1,5 @@
 from bot import QABot
+from llm import _LLM_
 
 if __name__ == "__main__":
     # 初始化机器人

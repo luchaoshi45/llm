@@ -4,6 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.generation import GenerationConfig
 import json
 import os
+from llm import _LLM_
 
 # cpu / cuda
 # os.environ["CUDA_VISIBLE_DEVICES"]="-1"

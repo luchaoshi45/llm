@@ -3,6 +3,7 @@ from lm_eval.models.huggingface import HFLM
 from lm_eval import simple_evaluate
 from lm_eval import tasks
 import os, json
+from llm import _LLM_
 
 # 加载模型和分词器
 model = AutoModelForCausalLM.from_pretrained(_LLM_, device_map="auto", trust_remote_code=True).eval()

@@ -1,5 +1,7 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
+from bot import QABot
+from llm import _LLM_
 
 app = FastAPI()
 bot = QABot(model_path=_LLM_, device="cuda")

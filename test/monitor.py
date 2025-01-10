@@ -5,6 +5,7 @@ import signal
 import sys
 import atexit
 import json
+from llm import _LLM_
 
 current_pid=os.getpid()
 print(f"当前进程pid号为:{current_pid}")
