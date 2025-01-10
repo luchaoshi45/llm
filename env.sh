@@ -1,9 +1,11 @@
 # TOOL
 git config --global user.name "MiraBit"
 git config --global user.email "luchaoshi45@gmail.com"
-pip install nvitop
 apt update
 apt install nload
+
+pip install nvitop
+pip install modelscope
 
 # REF
 git clone https://hub.gitmirror.com/https://github.com/luchaoshi45/llm.git
