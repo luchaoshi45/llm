@@ -5,6 +5,8 @@ import signal
 import sys
 import atexit
 import json
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from llm import _LLM_
 
 current_pid=os.getpid()

@@ -4,6 +4,8 @@ from lm_eval import simple_evaluate
 from lm_eval import tasks
 import torch
 import os, json
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from llm import _LLM_
 
 # 强制指定设备为 CPU

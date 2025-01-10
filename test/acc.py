@@ -3,6 +3,8 @@ from lm_eval.models.huggingface import HFLM
 from lm_eval import simple_evaluate
 from lm_eval import tasks
 import os, json
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from llm import _LLM_
 
 # 加载模型和分词器
