@@ -15,6 +15,7 @@ git config --global user.name "MiraBit"
 git config --global user.email "luchaoshi45@gmail.com"
 apt update
 apt install nload
+apt-get update && apt-get install -y rsync
 pip install transformer
 pip install nvitop
 pip install modelscope
