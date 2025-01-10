@@ -7,6 +7,12 @@ python -c "import torch; print(torch.cuda.device_count())"
 python -c "import torch; t = torch.tensor([1.0]); t = t.to('cuda') if torch.cuda.is_available() else t; print(t.device)"
 
 # LIB
+git config --global user.name "MiraBit"
+git config --global user.email "luchaoshi45@gmail.com"
+pip install nvitop
+apt update
+apt install nload
+
 git clone https://github.com/luchaoshi45/llm.git
 cd llm
 
@@ -24,11 +30,7 @@ cd LLaMA-Factory
 pip install -e ".[torch,metrics]"
 cd ..
 
-git config --global user.name "MiraBit"
-git config --global user.email "luchaoshi45@gmail.com"
 
-pip install nvitop
-apt install nload
 
 
 # TEST
